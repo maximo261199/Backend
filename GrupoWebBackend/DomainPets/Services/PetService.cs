@@ -126,6 +126,9 @@ namespace GrupoWebBackend.DomainPets.Services
 
         }
         
+       // se realizo algunos cambios al programa 
+
+        
         public async Task<IEnumerable<Pet>> ListPublicationsTypeGender(string type, string gender)
         {
             return await _petRepository.ListPublicationsTypeGender(type, gender);
