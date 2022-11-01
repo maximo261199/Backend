@@ -140,6 +140,8 @@ namespace GrupoWebBackend.DomainPets.Services
             return await _petRepository.ListPublicationsTypeGenderAttention(type, gender, attention);
 
         }
+
+        //se concluyo satisfactoriamente
        
     }
 }
