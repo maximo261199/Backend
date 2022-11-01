@@ -125,7 +125,18 @@ namespace GrupoWebBackend.DomainPets.Services
             return await _petRepository.ListPublicationsTypeAttention(type, attention);
 
         }
+        
+        public async Task<IEnumerable<Pet>> ListPublicationsTypeGender(string type, string gender)
+        {
+            return await _petRepository.ListPublicationsTypeGender(type, gender);
 
+        }
+
+        public async Task<IEnumerable<Pet>> ListPublicationsTypeGenderAttention(string type, string gender, string attention)
+        {
+            return await _petRepository.ListPublicationsTypeGenderAttention(type, gender, attention);
+
+        }
        
     }
 }
