@@ -90,7 +90,8 @@ namespace GrupoWebBackend.Tests
         }
         
 
-        [When(@"A get publications by user request is sent")]
+
+[When(@"A get publications by user request is sent")]
         public void WhenAGetPublicationsByUserRequestIsSent()
         {
             Response = _client.GetAsync(_baseUri).ConfigureAwait(false);
@@ -101,6 +102,9 @@ namespace GrupoWebBackend.Tests
         {
             _baseUri = new Uri($"https://localhost:{port}/api/v{version}/Users/{id}/publications");
             _client = _factory.CreateClient(new WebApplicationFactoryClientOptions{BaseAddress = _baseUri});
-        }
+        }
+
+
+        
     }
 }
